@@ -87,6 +87,7 @@ function inputData(temp_c,updated,country,localTime,region,name,icon){
     <span>Uhrzeit: ${localTime}</span>
     <span>Bundesland: ${region}</span>
     <span>zuletzt aktualisiert: ${updated}</span>
-    <img src="${icon}">
+    
     `;
+    document.getElementById("weatherIcon").innerHTML = `<img src="${icon}"></img>`
 }

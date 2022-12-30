@@ -1,3 +1,8 @@
+body {
+  background-color: #a6abb391 !important;
+}
+
+
 button {
   width: 110px;
   border-radius: 15px;
@@ -37,11 +42,13 @@ button {
   width: 50vw;
   border: 2px solid skyblue;
   height: 220px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .cities {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 15px;
   flex-wrap: wrap;
 }
@@ -55,4 +62,10 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.weatherIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
