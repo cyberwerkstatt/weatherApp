@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
-    <script src="include.js"></script>r
+    <script src="include.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body onload="includeHTML()">
     <div w3-include-html="header.html"></div>
-    <input id="input" type="text" placeholder="Enter a City">
-    <button id="button" type="button" onclick="loadData()">Check the Weather</button>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="input-group mb-3">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="loadData()">Wetter laden</button>
+                <input id="input" type="text" class="form-control" placeholder="Enter a City" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              </div> 
+        </div>
+        <div class="right-container">
+            <div id="weatherData" class="weatherData"></div>
+        </div>
+    </div>
+    <div id="cities" class="cities"></div>
+    <button id="loadButton" class="btn btn-primary" onclick="loadButtons()">Load Cities</button>
+    
+
+    
+    
+    
 </body>
 </html>
