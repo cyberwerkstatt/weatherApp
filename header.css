@@ -3,7 +3,7 @@ h1 {
 }
 
 .header {
-    background: linear-gradient(#6664e6, #9198e5);
+    background: #0d6efd;
     display: flex;
     justify-content: center;
     align-items: center;

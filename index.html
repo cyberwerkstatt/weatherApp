@@ -8,13 +8,13 @@
     <script src="script.js"></script>
     <script src="include.js"></script>
     <link rel="stylesheet" href="style.css">
-<<<<<<< HEAD
-=======
+
+
     <link rel="stylesheet" href="header.css">
->>>>>>> refs/remotes/origin/main
+
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<body onload="includeHTML()">
+<body onload="includeHTML(), start()">
     <div w3-include-html="header.html"></div>
     <div class="main-container">
         <div class="left-container">
@@ -28,11 +28,25 @@
             <div id="weatherIcon" class="weatherIcon"></div>
         </div>
     </div>
-    <div id="cities" class="cities"></div>
-    <button id="loadButton" class="btn btn-primary" onclick="loadButtons()">Load Cities</button>
-    
+    <div class="middle-container">
+        <div id="cities" class="cities"></div>
+        <button id="loadButton" class="btn btn-primary" onclick="loadButtons()">Load Cities</button>
+        <div id="wiki" class="wiki"></div>
+    </div>
+    <div id="slider" class="slider">
+        <div id="slider1" onclick="start()" >
+            <div id="img-container1" class="img-container">
+                <img src="./img/sun.jpg" alt="">
+            </div>
+            <div id="img-container2" class="img-container">
+                <img src="./img/clouds.jpg" alt="">
+            </div>
+            <div id="img-container3" class="img-container">
+                <img src="./img/snow.jpg" alt="">
+            </div>
+        </div>
+    </div>
 
-    
     
     
 </body>

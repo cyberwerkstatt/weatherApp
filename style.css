@@ -1,5 +1,10 @@
 body {
   background-color: #a6abb391 !important;
+  overflow-x: hidden;
+}
+
+span {
+  font-size: 20px;
 }
 
 
@@ -12,38 +17,39 @@ button {
 
 #input {
   background: white;
-  border: 2px solid lightgray;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   padding: 10px 15px;
   transition: border 0.5s ease;
   outline: none;
   text-align: center;
+  margin-right: 15px;
+  outline: none;
 }
 
 #input:focus {
-  border: 2px solid skyblue;
   outline: none;
 }
 
 .main-container {
-  border: 1px solid black;
   display: flex;
   
 }
 
 .left-container {
   width: 50vw;
-  border: 2px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
 .right-container {
   width: 50vw;
-  border: 2px solid skyblue;
   height: 220px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .cities {
@@ -69,3 +75,60 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+.weatherIcon img {
+  width: 180px;
+}
+
+.btn {
+  margin: 15px !important;
+}
+
+#button-addon1 {
+  background-color: #0d6efd;
+  color: black;
+}
+
+#button-addon1:hover {
+  background-color: #518de7 !important;
+  color: antiquewhite !important;
+}
+
+.slider {
+  height: 49vh;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slider1 {
+  height: 49vh;
+  display: flex;
+  
+  
+}
+
+
+.img-container img{
+  width: 100vw;
+  height: 49vh;
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+
+.middle-container {
+  height: 20vh;
+}
+
+.next {
+  transform: translateX(33.33%);
+  transition: transform 500ms ease-in-out;
+}
+
+.next2 {
+  transform: translateX(-33.33%);
+  transition: transform 500ms ease-in-out;
+}
+

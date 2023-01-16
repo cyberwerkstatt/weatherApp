@@ -5,10 +5,12 @@ const cities = [
     "Klagenfurt","Sankt Pölten"
 ];
 
+let slider_pics = ["./img/sun.jpg","clouds.jpg","snow.jpg"];
+
 
 
 // declaring the api-key and the api-host
-const API_KEY = "YOUR API";
+const API_KEY = "API-KEY";
 const API_HOST = "weatherapi-com.p.rapidapi.com";
 let button = document.getElementById("button");
 
@@ -40,10 +42,10 @@ async function loadData(){
         let name = location_overview["name"]
         let icon = responseAsJSON["current"]["condition"]["icon"]
         inputData(temp_c,updated,country,localTime,region,name,icon)
+        loadWiki(input)
     }catch {
         console.log("Es ist ein Fehler aufgetreten!");
     }
-
     input.value = "";
 }
 // loading the functing after all items are ready
@@ -74,6 +76,7 @@ async function loadWeather(city){
     console.log(location_overview)
     console.log(responseAsJSON2)
     inputData(temp_c,updated,country,localTime,region,name,icon)
+    loadWiki(city);
 }
 
 
@@ -84,10 +87,36 @@ function inputData(temp_c,updated,country,localTime,region,name,icon){
     <span>Ort: ${name}</span>
     <span>Temperatur: ${temp_c} Grad</span>
     <span>Land: ${country}</span>
-    <span>Uhrzeit: ${localTime}</span>
+    <span>Datum und Uhrzeit: ${localTime}</span>
     <span>Bundesland: ${region}</span>
     <span>zuletzt aktualisiert: ${updated}</span>
     
     `;
     document.getElementById("weatherIcon").innerHTML = `<img src="${icon}"></img>`
 }
+
+function loadWiki(input){
+    url = `https://de.wikipedia.org/wiki/${input}`;
+    let wiki = document.getElementById("wiki");
+    wiki.innerHTML = `<a class="btn btn-primary btn-lg" href="${url}" target="_blank">Wikipedia ${input}</a>`
+}
+
+function slide1(){
+    let container = document.getElementById("slider1");
+    container.classList.add("next");
+}
+
+
+
+function start(){
+    setTimeout(slide1, 3000);
+}
+
+
+
+
+
+
+
+
+
