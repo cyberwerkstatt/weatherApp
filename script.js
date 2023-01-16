@@ -10,7 +10,7 @@ let slider_pics = ["./img/sun.jpg","clouds.jpg","snow.jpg"];
 
 
 // declaring the api-key and the api-host
-const API_KEY = "API-KEY";
+const API_KEY = "0f8684a1d5msha79d1acb811c621p191b39jsn769e95c09f3d";
 const API_HOST = "weatherapi-com.p.rapidapi.com";
 let button = document.getElementById("button");
 

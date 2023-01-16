@@ -96,7 +96,6 @@ button {
 
 .slider {
   height: 49vh;
-  border: 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,8 +103,6 @@ button {
 #slider1 {
   height: 49vh;
   display: flex;
-  
-  
 }
 
 
