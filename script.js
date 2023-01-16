@@ -8,7 +8,7 @@ const cities = [
 
 
 // declaring the api-key and the api-host
-const API_KEY = "YOU API_KEY";
+const API_KEY = "YOUR API";
 const API_HOST = "weatherapi-com.p.rapidapi.com";
 let button = document.getElementById("button");
 
