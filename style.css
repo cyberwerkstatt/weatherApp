@@ -4,7 +4,9 @@ body {
 }
 
 span {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 
@@ -68,6 +70,7 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  
 }
 
 .weatherIcon {
@@ -76,12 +79,38 @@ button {
   align-items: center;
 }
 
+.weatherBorder {
+  border: 3px solid;
+  border-radius: 10px;
+  width: 440px;
+  height: 206px;
+  background-color: #f0f8ff78;
+}
+
+#wiki {
+  display: flex;
+  justify-content: center;
+}
+
+#wiki a {
+  background-color: green !important;
+}
+
+#wiki_btn:hover {
+  background-color: rgb(97, 212, 97) !important;
+}
+
 .weatherIcon img {
   width: 180px;
 }
 
 .btn {
   margin: 15px !important;
+  background-color: gray !important;
+}
+
+.btn:hover {
+  background-color: #0d6efd !important;
 }
 
 #button-addon1 {
@@ -121,11 +150,16 @@ button {
 
 .next {
   transform: translateX(33.33%);
-  transition: transform 500ms ease-in-out;
+  transition: transform 2000ms ease-in-out;
 }
 
 .next2 {
   transform: translateX(-33.33%);
-  transition: transform 500ms ease-in-out;
+  transition: transform 2000ms ease-in-out;
+}
+
+.next3 {
+  transform: translateX(0%);
+  transition: transform 2000ms ease-in-out;
 }
 

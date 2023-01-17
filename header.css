@@ -9,3 +9,8 @@ h1 {
     align-items: center;
     
 }
+
+.header img {
+    width: 45px;
+    margin: 10px;
+}
