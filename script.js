@@ -46,6 +46,7 @@ async function loadData(){
         document.getElementById("weatherData").classList.add("weatherBorder");
     }catch {
         console.log("Es ist ein Fehler aufgetreten!");
+        document.getElementById("weatherData").innerHTML = `<span>Es ist ein Fehler aufgetreten. Versuch es nochmal!</span>`
     }
     input.value = "";
 }
